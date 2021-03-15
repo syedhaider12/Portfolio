@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block jquery %}
+<script src="{% static 'jquery/animate.js' %}" type="text/javascript"></script> {% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/skils.css' %}"> {% endblock %}
+{% block title %} Skills{% endblock %}
+{% block content %}
+<div class="st mt-4 mx-3 ">
+    <H1 class="text-warning"> Skills</H1>
+
+</div>
+<hr class="border-bottom  border-warning mx-3">
+<div class="container mb-5 ">
+    <div class="row ">
+        <div class="col-md-6 col-sm-6 my-3 ">
+            <h3 class="text-white fs-5 text">Html / Css</h3>
+            <div class="progress">
+                <div class="progress-bar bg-danger  " role="progressbar" style="width: 0%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100%</div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 my-3 ">
+            <h3 class="text-white fs-5 text">Bootstrap</h3>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 my-3 ">
+            <h3 class="text-white fs-5 text">Java Script / Jquery</h3>
+            <div class="progress">
+                <div class="progress-bar bg-warning " role="progressbar" style="width: 0%;" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 my-3 ">
+            <h3 class="text-white fs-5 text"> Python</h3>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 my-3 ">
+            <h3 class="text-white fs-5 text"> Django</h3>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 my-3 ">
+            <h3 class="text-white fs-5 text"> Numpy / Panda</h3>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 my-3 ">
+            <h3 class="text-white fs-5 text"> Critical Thinker</h3>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 my-3 ">
+            <h3 class="text-white fs-5 text">Great At Problem Sloving</h3>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}

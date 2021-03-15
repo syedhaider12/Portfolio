@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Contact Me {% endblock %}
+{% block content %}
+<div class="st mt-4 mx-3 ">
+    <H1 class="text-warning"> Contact ME </H1>
+
+</div>
+<hr class="border-bottom  border-warning mx-3">
+<div class="container">
+    <div class="row ">
+        <h3 class="text-white text-center mt-2 st ">I'D <i class="far fa-heart"></i> To Help!</h3>
+        <div class="col-sm-12 mt-3  ">
+           
+            <form action="/contact" method="POST" >
+                {% csrf_token %}
+                <div class="row justify-content-center">
+                    <div class="col-sm-8 col-md-5  ">
+                        <input type="text" class="form-control" name="fname" placeholder="Enter Your Name">
+                    </div>
+
+                </div>
+                <div class="row justify-content-center my-3">
+                    <div class="col-sm-8 col-md-5 ">
+                        <input type="email" class="form-control" name="fmail" placeholder="Enter your Email">
+                    </div>
+
+                </div>
+                <div class="row justify-content-center ">
+                    <div class="col-sm-8 col-md-5 ">
+                        <input type="text" class="form-control" name="fsubject" placeholder="Enter Your Subject">
+                    </div>
+
+                </div>
+                <div class="row justify-content-center my-3">
+                    <div class="col-sm-8 col-md-5 ">
+                        <textarea class="form-control" name="mess" rows="5" placeholder="Enter Your Query"></textarea>
+                        <div class="text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-2 col-md-2 mt-3 ">
+                                    <input type="submit" value="Submit" class="bg-warning st"
+                                        style="outline: none; border:none">
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+
+    </div>
+</div>
+{% endblock %}
