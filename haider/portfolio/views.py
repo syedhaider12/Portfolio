@@ -4,13 +4,13 @@ from .models import contact
 
 
 def home (request):
-    
-    return render(request,'home.html', {'home': 'active'})
+    context = {'home' : 'active'}
+    return render(request,'home.html', context)
 def skills(request):
-     context = {'skills':'active'}
-     return render(request,'skills.html',context)
+    context = {'skills':'active'}
+    return render(request,'skills.html',context)
 def contac(request):
-    context = {'contact':'active',}
+    context = {'contact':'active'}
     if request.method =='POST':
         name = request.POST['fname']
         emial = request.POST['fmail']
@@ -18,9 +18,9 @@ def contac(request):
         textarea = request.POST['mess']
         obj = contact(name=name,emial=emial,subject=subject,textarea=textarea)
         obj.save();
-        return redirect('/contact')
+        return redirect('/contact',context)
     else:
         return render(request, 'contact.html',context)
 def service(request):
-     context = {'service':'active'}
-     return render(request, 'service.html',context)
+    context = {'service': 'active'}
+    return render(request, 'service.html',context)

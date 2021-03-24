@@ -1,11 +1,11 @@
 .st{
     font-family: 'Lobster', cursive;
 }
-a.i{
+#i{
     color: white;
 }
 
-a.i.active{
+#i.active{
     color: black;
     background-color: #F2CB05;
 }
